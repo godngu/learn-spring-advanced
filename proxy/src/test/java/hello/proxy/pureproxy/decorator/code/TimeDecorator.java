@@ -15,7 +15,7 @@ public class TimeDecorator extends Decorator {
         log.info("TimeDecorator 실행");
         long startTime = System.currentTimeMillis();
 
-        String result = getComponent().operation();
+        String result = component.operation();
 
         long endTime = System.currentTimeMillis();
         long resultTime = endTime - startTime;
